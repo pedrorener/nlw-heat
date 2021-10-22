@@ -23,9 +23,6 @@ function getGitHubProfileInfos() {
     .then(data => {
       userName.textContent = data.name
       userBio.textContent = data.bio
-      user.Link.href = data.html_url
-      user.Image.src = data.avatar_url
-      userLogin.textContent = data.login
     })
 }
 
